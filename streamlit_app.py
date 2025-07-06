@@ -1,13 +1,16 @@
 import streamlit as st
 import openai
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Set your OpenAI API key (or use environment variable)
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # App title
 st.set_page_config(page_title="💬 ChatBot AI")
-st.title("🤖 AI ChatBot")
+st.title("🤖 Release Team ChatBot")
 
 # Initialize session state for chat history
 if "messages" not in st.session_state:
