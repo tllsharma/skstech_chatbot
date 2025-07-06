@@ -5,7 +5,7 @@ import os
 # Set your OpenAI API key (or use environment variable)
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
-# App title
+## App title
 st.set_page_config(page_title="💬 ChatBot AI")
 st.title("🤖 AI ChatBot")
 
